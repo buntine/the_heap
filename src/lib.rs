@@ -23,6 +23,11 @@ mod tests {
         let l2 = BinaryTree::new(3, None, None);
         let l1 = BinaryTree::new(1, Some(&l2), None);
         let r1 = BinaryTree::new(2, None, None);
-        let t = BinaryTree::new(2, Some(&l1), Some(&r1));
+        let t = BinaryTree::new(0, Some(&l1), Some(&r1));
+
+        // TODO: Write this macro.
+        // let tree = binary_tree![
+        //     0, [1, [3]], [2]
+        // ];
     }
 }
